@@ -11,6 +11,9 @@ def fizzbuzz(n):
       multiples of five print "Buzz".
     - For numbers which are multiples of both three and five print "FizzBuzz".
     """
+
+    if type(n) != int:
+        raise TypeError("n must be an integer")
     if n < 1:
         return
 
